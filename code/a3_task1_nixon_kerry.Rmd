@@ -84,9 +84,9 @@ spill_count_by_county <- ca_counties_spillcount %>%
   st_join(oil_spill_count)
 
 
-# Data Viz: Finalized Cloropleth Plot
+# Data Viz: Finalized Chloropleth Plot
 
-# Using ggplot to generate a cloropleth plot using the number of oil spills by county as the fill color
+# Using ggplot to generate a chloropleth plot using the number of oil spills by county as the fill color
 ggplot(data = spill_count_by_county) +
   geom_sf(aes(fill = n), color = "black", size = .1) +
   scale_fill_gradientn(colors = c("#DEEDCF","#1D9A6C","#137177","#0A2F51"), na.value = "white") +
@@ -96,7 +96,7 @@ ggplot(data = spill_count_by_county) +
 ```
 
 
-**Figure 2.** The above cloropleth plot of California shows the number of inland oil spills that occurred in 2008 by county. Inland spills include both land and freshwater incidents. Counties without oil spill data are colored white. Darker colors correspond with a higher number of oil spills.
+**Figure 2.** The above chloropleth plot of California shows the number of inland oil spills that occurred in 2008 by county. Inland spills include both land and freshwater incidents. Counties without oil spill data are colored white. Darker colors correspond with a higher number of oil spills.
 
 
 ### Data Citations:
